@@ -141,11 +141,11 @@ Each dataset directory must contain the same structure (same families) as the fa
 For a training dataset, the `-train` option is used:
 
 ```bash
-java -cp "lib/*:bin" Util.BasicStatisticExperiment.GenerateTrainTestFile -t ~/tmpfs -feature results/FamilyModel/featureSpace -train /path/to/training_dataset
+java -cp "lib/*:bin" Util.BasicStatisticExperiment.GenerateTrainTestFile -t ~/tmpfs -family ./Families -feature results/FamilyModel/featureSpace -train /path/to/training_dataset
 ```
 
 For a test dataset, the `-test` option is used:
 
 ```bash
-java -cp "lib/*:bin" Util.BasicStatisticExperiment.GenerateTrainTestFile -t ~/tmpfs -feature results/FamilyModel/featureSpace -test /path/to/test_dataset
+java -cp "lib/*:bin" Util.BasicStatisticExperiment.GenerateTrainTestFile -t ~/tmpfs -family ./Families -feature results/FamilyModel/featureSpace -test /path/to/test_dataset
 ```
